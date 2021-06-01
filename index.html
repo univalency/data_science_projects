@@ -30,6 +30,11 @@
 	<p>This is probably due to correction and high volatility of crypto assets. We can also think of optimal execution strategies- they are not visible on big scales.</p>
         <p> To start noticing patterns, we can simply plot BTC and ETH price charts.</p>
         <p> Actual plots:</p>
+	
+	<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+	<span class="c1"># shift moves dates back by 1
+	</span><span class="n">df_change</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="nb">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)))</span> 
+	</code></pre></div></div>
         
 
 	</body>
