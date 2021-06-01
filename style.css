@@ -3,3 +3,7 @@ img {
   width: 100%;
   height: auto;
 }
+
+.highlighter-rouge .highlight {
+    background: #eef
+}
