@@ -18,8 +18,8 @@
         <p> Let's first load the Bitcoin tables and understand them</p>
 	<img  src="https://user-images.githubusercontent.com/70851370/120211282-a8b75680-c228-11eb-824a-44e83d0eba24.png" width="510" height="230">
         <p> open/close gives us prices at the beginning/end of a given time period. High/low are the highest and lowest prices attained during a given time period, respectively.Unix  - This is the unix timestamp or also known as "Epoch Time". We can use this to convert to your local timezone. Tradecount is simply the number of trades.</p>
-	<p> The tables have most recent dates on top, so let's reverse them for convenience. Following Machine Learning etiquette, we should normalize data. As for prices, I prefer to keep them in original format, but we introduce another column which records relative price changes. It's called a return in trading.</p>
-		
+	<p> The tables have most recent dates on top, so let's reverse them for convenience. Following Machine Learning etiquette, we should think about normalizing data. As for prices, we can introduce another column which records relative price changes. It's called a return in trading.</p>
+	<img src="https://user-images.githubusercontent.com/70851370/120251522-b3e6a280-c279-11eb-8621-bf6ebc7916a6.png width= "510" height= "45"
 	<p>It is interesting to see how trading volume is related to the price change (return). Oh a daily scale, correlation between absolute change and volume is quite low:
 	<img src="https://user-images.githubusercontent.com/70851370/120250485-3a00ea00-c276-11eb-9738-ae1b110ad147.png" width="510" height="194" >
 	
