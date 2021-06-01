@@ -17,10 +17,19 @@
         <p> I have downloaded the tables with minute, hourly and daily information on BTC and ETH from https://www.CryptoDataDownload.com<\p>
         <p> Let's first load the Bitcoin tables and understand them</p>
 	<img  src="https://user-images.githubusercontent.com/70851370/120211282-a8b75680-c228-11eb-824a-44e83d0eba24.png" width="510" height="230">
-        <p> open/close gives us prices at the beginning/end of a given time period</p>
-        <p> To start noticing patterns, we can simply plot BTC and ETH price charts. However, the tables have most recent dates on top, so let's reverse them for convenience</p>
+        <p> open/close gives us prices at the beginning/end of a given time period. High/low are the highest and lowest prices attained during a given time period, respectively.Unix  - This is the unix timestamp or also known as "Epoch Time". We can use this to convert to your local timezone. Tradecount is simply the number of trades.</p>
+	<p> The tables have most recent dates on top, so let's reverse them for convenience. Following Machine Learning etiquette, we should normalize data. As for prices, I prefer to keep them in original format, but we introduce another column which records relative price changes. It's called a return in trading.</p>
+		
+	<p>It is interesting to see how trading volume is related to the price change (return). Oh a daily scale, correlation between absolute change and volume is quite low:
+	<img src="https://user-images.githubusercontent.com/70851370/120250485-3a00ea00-c276-11eb-9738-ae1b110ad147.png" width="510" height="194" >
+	
+	<p>However, if we look at a hourly scale, correlation is bigger. On a minute scale, it is even more significant <\p>
+	<img src="https://user-images.githubusercontent.com/70851370/120250669-eb078480-c276-11eb-8df8-877539979f75.png" width="510" height="194" >
+	<img src="https://user-images.githubusercontent.com/70851370/120250819-5fdabe80-c277-11eb-8a0b-ec6268c84af5.png"  width="510" height="194">
+	<p>This is probably due to correction and high volatility of crypto assets.</p>
+        <p> To start noticing patterns, we can simply plot BTC and ETH price charts.</p>
         <p> Actual plots:</p>
-        <p> It is interesting to see how trading volume is related to the price change (return). Oh a daily scale, correlation between absolute change and volume is quite low. However, if we look at a minute scale, correlation is more significant. This is probably due to correction and high volatility of crypto assets.</p> 
+        
 
 	</body>
 </html>
