@@ -6,6 +6,8 @@ img {
 
 body {
   background-color: lightblue;
+  margin-right: 150px;
+  margin-left: 150px;
 }
 
 h1 {
@@ -16,3 +18,4 @@ h1 {
 title {
   font-family: "Lucida Console", "Courier New", monospace;
 }
+
