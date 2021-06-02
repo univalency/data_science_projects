@@ -7,7 +7,12 @@ img {
 body {
   background-color: lightblue;
 }
+
 h1 {
   color: white;
   text-align: center;
+}
+
+.title {
+  font-family: Courier New, sans-serif;
 }
