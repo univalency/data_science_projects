@@ -1,6 +1,6 @@
-img {
+img.resize {
   border-radius: 8px;
-  width: 100%;
+  width: 510;
   height: auto;
 }
 
