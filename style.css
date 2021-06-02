@@ -7,3 +7,11 @@ img {
 .highlighter-rouge .highlight {
     background: #eef
 }
+
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
