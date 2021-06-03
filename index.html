@@ -16,20 +16,20 @@
 	</head>
 	<body>
 		<h1 id="head1"> Studying Bitcoin and altcoin correlations </h1>
-	<p>We are dissecting major crypto currencies, like Bitcoin, into fundamenttal trends and compare their dynamic with conventional stocks.This post is intended to be a "live" document, that we will be updated regularly with new information and questions.<\p>
-        <p> I have downloaded the tables with minute, hourly and daily information on BTC and ETH from https://www.CryptoDataDownload.com<\p>
+	<p>We are dissecting major crypto currencies, like Bitcoin, into fundamenttal trends and compare their dynamic with conventional stocks. This post is intended to be a "live" document, that we will be updated regularly with new information and questions.</p>
+        <p> I have downloaded the tables with minute, hourly and daily information on BTC and ETH from https://www.CryptoDataDownload.com </p>
         <p> Let's first load the Bitcoin tables and understand them</p>
 	<img  src="https://user-images.githubusercontent.com/70851370/120211282-a8b75680-c228-11eb-824a-44e83d0eba24.png" width="510" height="230">
         <p> open/close gives us prices at the beginning/end of a given time period. High/low are the highest and lowest prices attained during a given time period, respectively.Unix  - This is the unix timestamp or also known as "Epoch Time". We can use this to convert to your local timezone. Tradecount is simply the number of trades.</p>
 	<p> The tables have most recent dates on top, so let's reverse them for convenience. Following Machine Learning etiquette, we should think about normalizing data. As for prices, we can introduce another column which records relative price changes. It's called a return in trading.</p>
-	<p><img src="https://user-images.githubusercontent.com/70851370/120251522-b3e6a280-c279-11eb-8621-bf6ebc7916a6.png" width= "510" height= "45" <\p>
+	<p><img src="https://user-images.githubusercontent.com/70851370/120251522-b3e6a280-c279-11eb-8621-bf6ebc7916a6.png" width= "510" height= "45" </p>
 	<p>It is interesting to see how trading volume is related to the price change (return). Oh a daily scale, correlation between absolute change and volume is quite low:
-	<img src="https://user-images.githubusercontent.com/70851370/120250485-3a00ea00-c276-11eb-9738-ae1b110ad147.png" width="510" height="194" >
+	<p style="text-align:center;"> <img src="https://user-images.githubusercontent.com/70851370/120250485-3a00ea00-c276-11eb-9738-ae1b110ad147.png" width="510" height="194" ></p>
 	
 	<p>However, if we look at a hourly scale, correlation is bigger <\p>
-	<p> <img src="https://user-images.githubusercontent.com/70851370/120250669-eb078480-c276-11eb-8df8-877539979f75.png" width="510" height="194" ><\p>
+	<p> <img src="https://user-images.githubusercontent.com/70851370/120250669-eb078480-c276-11eb-8df8-877539979f75.png" width="510" height="194" ></p>
 	<p>On a minute scale, it is even more significant <\p>
-	<p><img src="https://user-images.githubusercontent.com/70851370/120250819-5fdabe80-c277-11eb-8a0b-ec6268c84af5.png"  width="510" height="194"><\p>
+	<p><img src="https://user-images.githubusercontent.com/70851370/120250819-5fdabe80-c277-11eb-8a0b-ec6268c84af5.png"  width="510" height="194"></p>
 	<p>This is probably due to correction and high volatility of crypto assets. We can also think of optimal execution strategies- they are not visible on big scales.</p>
 	<p>We can study a particular date: 2018-12-05. Coinbase has moved almost 5 billion dollars and it caused a bit of panic on the market:</p>
 	<img src = "https://user-images.githubusercontent.com/70851370/120348558-33fe1e00-c2f5-11eb-8347-f1764d5d02d6.jpg"  width = "600" height = "400">
