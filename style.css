@@ -46,6 +46,11 @@ imgc {
   text-align: center;
 }
 
+.textlink{
+  font-size: 22px;
+  font-family: "Palatino", "URW Palladio L", serif;
+}
+
 p {
   font-size: 22px;
   font-family: "Palatino", "URW Palladio L", serif;
