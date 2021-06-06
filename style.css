@@ -4,7 +4,7 @@ img {
   height: auto;
 }
 
-.topnav  { /* deleted a*/
+.topnav a { /* deleted a*/
   float: up;
   display: inline;
   color: #1a0d00;
