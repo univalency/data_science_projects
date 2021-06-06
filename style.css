@@ -6,9 +6,10 @@ img {
 
 .topnav a {
   float: up;
-  display: block;
+  display: inline;
   color: #1a0d00;
   text-decoration: none;
+  padding: 5 px;
   font-size: 17px;
 }
 
