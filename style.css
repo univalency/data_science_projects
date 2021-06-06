@@ -13,6 +13,10 @@ img {
   font-size: 20px;
 }
 
+title {
+  padding: 20px;
+}
+
 body {
   background-color: #F4F6F6;
   margin-right: 160px;
