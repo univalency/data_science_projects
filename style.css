@@ -4,6 +4,16 @@ img {
   height: auto;
 }
 
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
 body {
   background-color: #F4F6F6;
   margin-right: 160px;
